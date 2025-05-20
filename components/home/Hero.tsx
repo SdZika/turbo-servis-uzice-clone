@@ -5,16 +5,27 @@ import Image from 'next/image';
 
 const slides = [
   {
-    image: '/images/hero-1.jpg',
+    image: '/images/hero-1.webp',
     title: 'BEZBEDNOST BEZ KOMPROMISA',
     subtitle: 'Kvalitet po najstrožijim standardima auto-industrije'
   },
   {
-    image: '/images/hero-2.jpg',
-    title: 'TURBO SERVIS',
-    subtitle: 'Pronađite vaše vozilo'
+    image: '/images/hero-2.webp',
+    title: 'BEZBEDNOST BEZ KOMPROMISA',
+    subtitle: 'Kvalitet po najstrožijim standardima auto-industrije'
+  },
+  {
+    image: '/images/hero-3.webp',
+    title: 'BEZBEDNOST BEZ KOMPROMISA',
+    subtitle: 'Kvalitet po najstrožijim standardima auto-industrije'
   }
 ];
+
+const heroRight = {
+  image: '/images/hero-4.webp',
+  title: 'TURBO SERVIS',
+  subtitle: 'Kvalitet po najstrožijim standardima auto-industrije'
+};
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,67 +42,95 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative w-full h-[400px] md:h-[500px]">
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <Image
-            src={slide.image}
-            alt={slide.title}
-            fill
-            className="object-cover"
-          />
-          
-          <div className="absolute inset-0 flex items-center">
-            <div className="container mx-auto px-4">
-              <div className="max-w-lg bg-white/80 p-6 rounded-lg">
-                <h1 className="text-2xl md:text-3xl font-bold text-[#003366] mb-2">{slide.title}</h1>
-                <p className="text-sm md:text-base text-gray-700 mb-4">{slide.subtitle}</p>
+    <div className="container mx-auto px-4 my-4">
+      <div className="flex flex-col lg:flex-row gap-4">
+        {/* Left section - Slider (2/3 width) */}
+        <div className="lg:w-2/3">
+          <div className="relative h-[400px] rounded-lg overflow-hidden">
+            {slides.map((slide, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 transition-opacity duration-1000 ${
+                  index === currentSlide ? 'opacity-100' : 'opacity-0'
+                }`}
+              >
+                <Image
+                  src={slide.image}
+                  alt={slide.title}
+                  fill
+                  className="object-cover"
+                />
                 
-                {index === 1 && (
+                <div className="absolute inset-0 flex items-end">
+                  <div className="p-4 lg:p-6 w-full">
+                    <div className="max-w-md bg-white/80 p-4 lg:p-6 rounded-lg mb-4 ml-6">
+                      <h1 className="text-xl lg:text-3xl font-bold text-[#003366] mb-2">{slide.title}</h1>
+                      <p className="text-sm lg:text-base text-gray-700">{slide.subtitle}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+
+            {/* Pagination dots */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+              {slides.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-3 h-3 rounded-full ${
+                    index === currentSlide ? 'bg-[#9CC31C]' : 'bg-white'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Right section - Form (1/3 width) */}
+        <div className="lg:w-1/3">
+          <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <Image
+              src={heroRight.image}
+              alt={heroRight.title}
+              fill
+              className="object-cover"
+            />
+            
+            <div className="absolute inset-0 flex items-end justify-start">
+              <div className="p-4 lg:p-6">
+                <div className="bg-white/80 p-4 lg:p-6 rounded-lg mb-4 ml-6" style={{ width: '60%' }}>
+                  <div className="mb-4">
+                    <h2 className="text-xl font-bold text-[#003366]">{heroRight.title}</h2>
+                    <p className="text-sm text-gray-700">{heroRight.subtitle}</p>
+                  </div>
+                  
                   <div className="space-y-2">
                     <div className="flex">
-                      <select className="w-full px-4 py-2 border border-gray-300 rounded-md bg-white">
+                      <select className="w-full px-4 py-2 border border-gray-300 rounded-md bg-[#003366] text-[#9CC31C] text-sm">
                         <option>Izaberite marku</option>
                       </select>
                     </div>
                     <div className="flex">
-                      <select className="w-full px-4 py-2 border border-gray-300 rounded-md bg-white">
+                      <select className="w-full px-4 py-2 border border-gray-300 rounded-md bg-[#003366] text-[#9CC31C] text-sm">
                         <option>Izaberite model</option>
                       </select>
                     </div>
                     <div className="flex">
-                      <select className="w-full px-4 py-2 border border-gray-300 rounded-md bg-white">
+                      <select className="w-full px-4 py-2 border border-gray-300 rounded-md bg-[#003366] text-[#9CC31C] text-sm">
                         <option>Izaberite tip</option>
                       </select>
                     </div>
-                    <button className="w-full bg-[#9CC31C] text-white py-2 px-4 rounded-md hover:bg-opacity-90 transition-all">
+                    <button className="w-full bg-[#9CC31C] text-[#003366] py-2 px-4 rounded-md hover:bg-opacity-90 transition-all text-sm">
                       Pretraži
                     </button>
                   </div>
-                )}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      ))}
-
-      {/* Pagination dots */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full ${
-              index === currentSlide ? 'bg-[#9CC31C]' : 'bg-white'
-            }`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
       </div>
     </div>
   );

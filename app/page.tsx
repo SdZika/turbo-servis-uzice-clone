@@ -7,8 +7,10 @@ import BrandsShowcase from '@/components/home/BrandsShowcase';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <Hero />
       
+      <div className="container mx-auto px-4 py-8">
+        <Hero />
+      </div>
       <div className="container mx-auto px-4 py-8">
         <h2 className="text-center text-lg font-medium mb-6">Za vas izdvajamo</h2>
         <RecommendedCategories />

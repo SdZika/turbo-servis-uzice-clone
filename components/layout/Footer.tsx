@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-center mb-8">
           <div className="mb-4 lg:mb-0">
             <Image 
-              src="/images/logo-white.png" 
+              src="/images/logo-white.webp" 
               alt="Turbo Servis" 
               width={150} 
               height={40}
