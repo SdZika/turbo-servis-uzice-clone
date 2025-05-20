@@ -10,7 +10,7 @@ const products = Array(5).fill({
   id: "bmw-730d",
   name: "BMW 730d E38 193HP - REMONTOVAN",
   price: "70.800,00 RSD",
-  image: "/images/turbo-product.png",
+  image: "/images/turbo-product.webp",
   inWishlist: false,
   onSale: true
 });

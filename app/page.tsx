@@ -12,7 +12,8 @@ export default function Home() {
         <Hero />
       </div>
       <div className="container mx-auto px-4 py-8">
-        <h2 className="text-center text-lg font-medium mb-6">Za vas izdvajamo</h2>
+        <h2 className="text-center">Za vas izdvajamo</h2>
+        <h3 className="text-center text-xl font-bold mb-6 text-[#333333]">Preporucene kategorije</h3>
         <RecommendedCategories />
       </div>
       
@@ -21,14 +22,14 @@ export default function Home() {
       </div>
       
       <div className="container mx-auto px-4 py-8">
-        <h2 className="text-center text-lg font-medium mb-6">Možda će vas zanimati</h2>
+        <h2 className="text-center">Možda će vas zanimati</h2>
         <h3 className="text-center text-xl font-bold mb-6 text-[#333333]">Preporučeni proizvodi</h3>
         <FeaturedProducts />
       </div>
       
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-6">
-          <p className="text-sm">Turbo Servis je ovlašćeni serviser i distributer</p>
+          <h2 className="text-center">Turbo Servis je ovlašćeni serviser i distributer</h2>
           <h3 className="text-xl font-bold text-[#333333]">Najvećih svetskih proizvođača turbokompresora</h3>
         </div>
         <BrandsShowcase />

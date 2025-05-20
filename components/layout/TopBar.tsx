@@ -11,9 +11,9 @@ export default function TopBar() {
         <div className="flex items-center space-x-4">
           <Link href="/lista-zelja" className="hover:underline">Lista želja</Link>
           <span>|</span>
-          <Link href="/projekte" className="hover:underline">Projekti</Link>
+          <Link href="/prijavi-se" className="hover:underline">Prijavi se</Link>
           <span>|</span>
-          <Link href="/sabirini-korpa" className="hover:underline">Sabirini korpa</Link>
+          <Link href="/izaberi-jezik" className="hover:underline">Izaberi jezik</Link>
         </div>
       </div>
     </div>

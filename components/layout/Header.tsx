@@ -41,8 +41,18 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6">
-            <Link href="/proizvodi" className="text-[#003366] font-medium px-2 py-1 rounded hover:bg-gray-100">
-              Proizvodi
+            <Link href="/proizvodi" className="bg-[#003366] text-white font-medium px-4 py-2 rounded-sm hover:bg-[#005099] flex items-center">
+                <div className="flex flex-col ml-2">
+                  <div className="flex">
+                    <div className="w-2 h-2 border border-white bg-transparent mx-0.5 my-0.5 rounded-xs"></div>
+                    <div className="w-2 h-2 border border-white bg-transparent mx-0.5 my-0.5 rounded-xs"></div>
+                  </div>
+                  <div className="flex">
+                    <div className="w-2 h-2 border border-white bg-transparent mx-0.5 my-0.5 rounded-xs"></div>
+                    <div className="w-2 h-2 border border-white bg-transparent mx-0.5 my-0.5 rounded-xs"></div>
+                  </div>
+                </div>
+              <span className="pl-2 mr-8">Proizvodi</span>
             </Link>
             <Link href="/pocetna" className="text-[#003366] font-medium px-2 py-1 rounded hover:bg-gray-100">
               Početna

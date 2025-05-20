@@ -1,8 +1,8 @@
 export default function PromoBar() {
   return (
-    <div className="bg-[#9CC31C] text-white text-sm py-2">
+    <div className="bg-[#9CC31C] text-[#003366] text-sm py-2">
       <div className="container mx-auto px-4 text-center">
-        Besplatna dostava za porudžbine preko 10.000 RSD na teritoriji cele Srbije
+        <span className="font-bold">Besplatna dostava</span> - za porudžbine cija je vrednost veca od 40.000 RSD
       </div>
     </div>
   );

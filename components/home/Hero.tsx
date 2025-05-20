@@ -106,26 +106,41 @@ export default function Hero() {
                     <p className="text-sm text-gray-700">{heroRight.subtitle}</p>
                   </div>
                   
-                  <div className="space-y-2">
-                    <div className="flex">
-                      <select className="w-full px-4 py-2 border border-gray-300 rounded-md bg-[#003366] text-[#9CC31C] text-sm">
-                        <option>Izaberite marku</option>
-                      </select>
+                <div className="space-y-2">
+                  <div className="flex relative">
+                    <select className="w-full px-4 py-2 border border-gray-300 rounded-sm bg-[#003366] text-[#9CC31C] text-sm appearance-none pr-10">
+                      <option>Izaberite marku</option>
+                    </select>
+                    <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
+                      <svg className="w-4 h-4 text-[#9CC31C]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
                     </div>
-                    <div className="flex">
-                      <select className="w-full px-4 py-2 border border-gray-300 rounded-md bg-[#003366] text-[#9CC31C] text-sm">
-                        <option>Izaberite model</option>
-                      </select>
-                    </div>
-                    <div className="flex">
-                      <select className="w-full px-4 py-2 border border-gray-300 rounded-md bg-[#003366] text-[#9CC31C] text-sm">
-                        <option>Izaberite tip</option>
-                      </select>
-                    </div>
-                    <button className="w-full bg-[#9CC31C] text-[#003366] py-2 px-4 rounded-md hover:bg-opacity-90 transition-all text-sm">
-                      Pretraži
-                    </button>
                   </div>
+                  <div className="flex relative">
+                    <select className="w-full px-4 py-2 border border-gray-300 rounded-sm bg-[#003366] text-[#9CC31C] text-sm appearance-none pr-10">
+                      <option>Izaberite model</option>
+                    </select>
+                    <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
+                      <svg className="w-4 h-4 text-[#9CC31C]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex relative">
+                    <select className="w-full px-4 py-2 border border-gray-300 rounded-sm bg-[#003366] text-[#9CC31C] text-sm appearance-none pr-10">
+                      <option>Izaberite tip</option>
+                    </select>
+                    <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
+                      <svg className="w-4 h-4 text-[#9CC31C]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                  </div>
+                  <button className="w-full bg-[#9CC31C] text-[#003366] py-2 px-4 rounded-sm hover:bg-opacity-90 transition-all text-sm">
+                    Pretraži
+                  </button>
+                </div>
                 </div>
               </div>
             </div>

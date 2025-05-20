@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -18,17 +18,17 @@ export default function Footer() {
             />
           </div>
           <div className="flex space-x-4">
-            <Link href="#" className="bg-[#9CC31C] p-2 rounded-full">
-              <Facebook className="h-5 w-5" />
+            <Link href="#" className="bg-[#9CC31C] text-[#003366] p-2 rounded-xl">
+              <FaFacebook className="h-5 w-5" />
             </Link>
-            <Link href="#" className="bg-[#9CC31C] p-2 rounded-full">
-              <Instagram className="h-5 w-5" />
+            <Link href="#" className="bg-[#9CC31C] text-[#003366] p-2 rounded-xl">
+              <FaInstagram className="h-5 w-5" />
             </Link>
-            <Link href="#" className="bg-[#9CC31C] p-2 rounded-full">
-              <Linkedin className="h-5 w-5" />
+            <Link href="#" className="bg-[#9CC31C] text-[#003366] p-2 rounded-xl">
+              <FaLinkedin className="h-5 w-5" />
             </Link>
-            <Link href="#" className="bg-[#9CC31C] p-2 rounded-full">
-              <Twitter className="h-5 w-5" />
+            <Link href="#" className="bg-[#9CC31C] text-[#003366] p-2 rounded-xl">
+              <FaTwitter className="h-5 w-5" />
             </Link>
           </div>
         </div>
