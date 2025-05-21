@@ -6,7 +6,7 @@ export default function BannerAds() {
     <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-4">
       <Link href="/promocija/novo-turbo" className="block overflow-hidden rounded-lg shadow-md">
         <Image
-          src="/images/turbo-product.webp"
+          src="/images/supercharger.webp"
           alt="New turbo products"
           width={600}
           height={300}
@@ -15,7 +15,7 @@ export default function BannerAds() {
       </Link>
       <Link href="/promocija/turbo-racing" className="block overflow-hidden rounded-lg shadow-md">
         <Image
-          src="/images/turbo-product.webp"
+          src="/images/supercharger.webp"
           alt="Turbo racing"
           width={600}
           height={300}

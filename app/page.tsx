@@ -21,12 +21,17 @@ export default function Home() {
         <BannerAds />
       </div>
       
-      <div className="container mx-auto px-4 py-8">
+      <div className="w-full my-8">
         <h2 className="text-center">Možda će vas zanimati</h2>
         <h3 className="text-center text-xl font-bold mb-6 text-[#333333]">Preporučeni proizvodi</h3>
-        <FeaturedProducts />
+        <div className="w-full bg-gray-100">
+          <div className="container mx-auto px-4 py-8">
+            
+            <FeaturedProducts />
+          </div>
+        </div>
       </div>
-      
+
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-6">
           <h2 className="text-center">Turbo Servis je ovlašćeni serviser i distributer</h2>
