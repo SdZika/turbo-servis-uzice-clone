@@ -13,7 +13,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white py-4 shadow-sm">
+    <header className="bg-gray-200 py-4 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -137,7 +137,7 @@ export default function Header() {
                 <Link href="/korpa" className="text-[#003366] flex items-center">
                   <div className="relative">
                     <ShoppingCart className="h-5 w-5 mr-2" />
-                    <span className="absolute -top-2 -right-2 bg-[#9CC31C] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                       0
                     </span>
                   </div>

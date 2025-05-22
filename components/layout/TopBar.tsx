@@ -6,7 +6,9 @@ export default function TopBar() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <span>Call centar: +381 31 522 333</span>
+          <span>|</span>
           <span>Email: office@turboservis.rs</span>
+          <span className="block sm:hidden mr-2">|</span>
         </div>
         <div className="flex items-center space-x-4">
           <Link href="/lista-zelja" className="hover:underline">Lista želja</Link>

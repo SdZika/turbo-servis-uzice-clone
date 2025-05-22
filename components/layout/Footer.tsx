@@ -18,7 +18,7 @@ export default function Footer() {
             />
           </div>
           <div className="flex space-x-4">
-            <Link href="#" className="bg-[#003366] text-[#003366] p-2 rounded-xl">
+            <Link href="#" className="bg-[#9CC31C] text-[#003366] p-2 rounded-xl">
               <FaFacebook className="h-5 w-5" />
             </Link>
             <Link href="#" className="bg-[#9CC31C] text-[#003366] p-2 rounded-xl">
@@ -83,7 +83,7 @@ export default function Footer() {
 
           {/* Payment methods */}
           <div className="mb-4 lg:mb-0">
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 pt-2">
               {['visa', 'master', 'intesa'].map((method) => (
                 <div key={method} className="bg-white p-2 rounded">
                   <Image 
@@ -102,7 +102,7 @@ export default function Footer() {
         </div>
 
         {/* Final copyright */}
-        <div className="text-xs text-center">
+        <div className="text-xs lg:text-left">
           <p>© 2025 Turbo Servis | Sva prava zadržana. Powered by Creatixe Technologies</p>
         </div>
       </div>
